@@ -192,3 +192,56 @@ Container
 Tomorrow we'll insert one more piece:
 
 Allah Hafiz, Meerub. 🌙🤍
+
+**creating a ci pipeline**
+You do not need Ubuntu installed on your laptop.
+
+When you push your code:
+
+Your Laptop (Windows)
+       │
+       │ git push
+       ▼
+GitHub Repository
+       │
+       ▼
+GitHub Actions
+       │
+       ▼
+☁ Creates a fresh Ubuntu virtual machine
+       │
+       ▼
+Runs your workflow
+       │
+       ▼
+Deletes the machine after finishing
+
+That Ubuntu computer exists only for a few minutes in GitHub's cloud.
+
+When the workflow finishes...
+
+🗑️ GitHub destroys it.
+
+Next time you push?
+
+A brand new Ubuntu machine is created again.
+
+Imagine your teammate has:
+
+MacBook
+
+Another teammate has:
+
+Windows
+
+Another teammate has:
+
+Ubuntu
+
+If everyone tested on their own computers, results could differ.
+
+Instead GitHub always says:
+
+"Everyone's code will be tested on the same Ubuntu machine."
+
+That's why CI is reliable.
