@@ -245,3 +245,14 @@ Instead GitHub always says:
 "Everyone's code will be tested on the same Ubuntu machine."
 
 That's why CI is reliable.
+
+1. go to docker hub and create token at personal access tokens from settings.
+2. than go to settings -> secrets of github
+   created secrets:
+   DOCKERHUB_TOKEN
+   DOCKERHUB_USERNAME
+3. changes in ci.yml
+4. and than git push
+5. did not run 
+check actions in gothub to see which is missing
+so i did the wrong token.
